@@ -9,13 +9,15 @@ $categories = [
     $cat = new Category('cat', 'fa-cat')
 ];
 
-$croccantini= new Food("croccantini", 18, "ottimi per taglia grande", "image", $categories[0],'sit' ,'test');
-$ball= new Toys("ball", 7, "gioco per cani", "image",$categories[1], 'lorem', 'ipsum');
-$collars= new Products("collars", 12, "collari per cani e gatti", "image",$categories[0]);
+$croccantini= new Food("Croccantini", 18, "Ottimi per cani di taglia grande, è un alimento completo integrato con ingredienti funzionali in grado di favorire il benessere generale dell’animale.", "./img/crocchette.jpg", $categories[0],'pollo', 'Trainer');
+$ball= new Toys("Palla", 7, "È una pallina divertende per cani, con le puntine di gomma si divertirà a mordicchiare il gioco", "./img/palla.jpg", $categories[0], 'gomma', 'verde');
+$collars= new Products("Collare", 11, "È un collare per gatti, con una semplice chiusura a sgancio rapido ed un campanellino per trovare facilmente il tuo gatto", "./img/collare.jpg", $categories[1]);
+$cuccia= new Products("Cuccia", 24, "La cuccia offre al tuo cane una superficie d’appoggio estremamente comoda e confortevole per il relax.", "./img/cuccia.png", $categories[0]);
 
 $products = [
     $croccantini,
     $ball,
-    $collars
+    $collars,
+    $cuccia
 ];
 ?>

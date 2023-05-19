@@ -10,11 +10,11 @@ class Products {
     public $category;
 
     function __construct($name, $price, $description, $image, $category){
-        $this->name = $_name;
-        $this->price = $_price;
-        $this->description = $_description;
-        $this->image = $_image;
-        $this->category = $_category;
+        $this->name = $name;
+        $this->price = $price;
+        $this->description = $description;
+        $this->image = $image;
+        $this->category = $category;
     }
     
     public function getProduct() {

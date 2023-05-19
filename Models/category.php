@@ -4,8 +4,8 @@ class Category {
     public $icon;
   
     function __construct($name, $icon) {
-        $this->name = $_name;
-        $this->icon = $_icon;
+        $this->name = $name;
+        $this->icon = $icon;
     }
 
 }

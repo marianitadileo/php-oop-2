@@ -22,7 +22,7 @@ require __DIR__ . "/db.php";
         
         <div class="card-body">
             <h5 class="card-title"><?php echo $product->name; ?></h5>
-            <i class="<?php echo $product->category->icon; ?>"></i>
+            <i class="fas <?php echo $product->category->icon; ?>"></i>
             <div> Prezzo: <?php echo $product->price; ?>$</div>
         </div>
         </div>

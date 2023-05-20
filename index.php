@@ -29,7 +29,8 @@ require __DIR__ . "/db.php";
                         <img src="<?php echo $product->image; ?>" class="card-img-top ms_img" alt="">
                         <h5 class="card-title"><?php echo $product->name; ?></h5>
                         <i class="fas <?php echo $product->category->icon; ?>"></i>
-                        <div> Prezzo: <?php echo $product->price; ?>$</div>
+                        <div> Prezzo: <?php echo $product->getPrice(); ?>€</div>
+
                     </div>
                     <div class="ms_flip_card_back">
                         <h6><?php echo $product->description; ?></h6>

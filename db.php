@@ -20,4 +20,10 @@ $products = [
     $collars,
     $cuccia
 ];
-?>
+
+    // ECCEZIONE
+    try{
+        $ball -> setDiscount(80);
+    } catch (Exception $error){
+        echo $error->getMessage();
+    }
